@@ -1,0 +1,15 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ž“·Ø8‘âÒ÷Ù1
+E
+java:S1604"(Make this anonymous inner class a lambda(Ç§ÞŒ8‘âÒ÷Ù1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›‰­—8’âÒ÷Ù1
+|	java:S116	"[Rename this field "DEFAULT_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û„ƒ¬þÿÿÿÿ8—âÒ÷Ù1
+v	java:S116"[Rename this field "DEFAULT_ELEMENTS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®¯‚	8—âÒ÷Ù1
+C
+java:S1170	"!Make this final field static too.(û„ƒ¬þÿÿÿÿ8—âÒ÷Ù1
+X	java:S125#"<This block of commented-out lines of code should be removed.(ÚôÌ‡8šâÒ÷Ù1
+G	java:S106c"+Replace this use of System.out by a logger.(å—ê»8›âÒ÷Ù1
+g
+java:S4275£"DRefactor this getter so that it actually refers to the field "size".(¯É÷éùÿÿÿÿ8œâÒ÷Ù1
+M	java:S106°"+Replace this use of System.out by a logger.(ºÂÄËøÿÿÿÿ8âÒ÷Ù1

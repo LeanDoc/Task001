@@ -1,0 +1,35 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(¶•Õáúÿÿÿÿ8È­Ç÷Ù1
+L
+java:S3740."/Provide the parametrized type for this generic.(È†–§8É­Ç÷Ù1
+L
+java:S37408"/Provide the parametrized type for this generic.(¸’íø8É­Ç÷Ù1
+7
+java:S1220""Move this file to a named package.8É­Ç÷Ù1
+X	java:S125"<This block of commented-out lines of code should be removed.(¥•ÖÏ8ú­Ç÷Ù1
+[
+java:S1854.">Remove this useless assignment to local variable "arrayList1".(È†–§8û­Ç÷Ù1
+]
+java:S1854+";Remove this useless assignment to local variable "forTest".( ÄŞıÿÿÿÿ8û­Ç÷Ù1
+S
+java:S18548"6Remove this useless assignment to local variable "a1".(¸’íø8û­Ç÷Ù1
+G	java:S106"+Replace this use of System.out by a logger.(€¾„8û­Ç÷Ù1
+L	java:S106"+Replace this use of System.out by a logger.(¤åéüÿÿÿÿ8ü­Ç÷Ù1
+G	java:S106"+Replace this use of System.out by a logger.(èÎâ“8ü­Ç÷Ù1
+L	java:S106"+Replace this use of System.out by a logger.(œƒÔ¹ÿÿÿÿÿ8ü­Ç÷Ù1
+G	java:S106!"+Replace this use of System.out by a logger.(Âîö8ı­Ç÷Ù1
+G	java:S106$"+Replace this use of System.out by a logger.(Ë¼‡º8ı­Ç÷Ù1
+L	java:S106%"+Replace this use of System.out by a logger.(ûôƒ¨úÿÿÿÿ8ı­Ç÷Ù1
+L	java:S106'"+Replace this use of System.out by a logger.(ëÊĞüÿÿÿÿÿ8ı­Ç÷Ù1
+L	java:S106)"+Replace this use of System.out by a logger.(ü­Æ‘ùÿÿÿÿ8ı­Ç÷Ù1
+N
+java:S1481+",Remove this unused "forTest" local variable.( ÄŞıÿÿÿÿ8ş­Ç÷Ù1
+L
+java:S1481."/Remove this unused "arrayList1" local variable.(È†–§8ş­Ç÷Ù1
+W	java:S1250"<This block of commented-out lines of code should be removed.(±€Ø8ş­Ç÷Ù1
+L	java:S1063"+Replace this use of System.out by a logger.(ÈÿÃùşÿÿÿÿ8ş­Ç÷Ù1
+G	java:S1065"+Replace this use of System.out by a logger.(‰ä­Ù8ş­Ç÷Ù1
+D
+java:S14818"'Remove this unused "a1" local variable.(¸’íø8ş­Ç÷Ù1
+L	java:S1069"+Replace this use of System.out by a logger.(†¹Ÿ›şÿÿÿÿ8ş­Ç÷Ù1
