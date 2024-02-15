@@ -4,11 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c047dab5-4c4a-4605-bad7-cf0e7caf354e" name="Changes" comment="" />
+    <list default="true" id="c047dab5-4c4a-4605-bad7-cf0e7caf354e" name="Changes" comment="done">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fd0cf49926d848948650e7cf2fa4d27bd90cecb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fd0cf49926d848948650e7cf2fa4d27bd90cecb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/599023fcad9b54939067c410bdffc9be78a42434" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea52e25fa9b21cd37158d0fe32d15874ec4e6dad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8abb1c878cf573c0d22ccb739c5491292234d4f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8abb1c878cf573c0d22ccb739c5491292234d4f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/9/599023fcad9b54939067c410bdffc9be78a42434" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/ea52e25fa9b21cd37158d0fe32d15874ec4e6dad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayList/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayList/MyArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayList/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayList/QuickSortTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2cABc3IJWIZK1Re6epbqW6v3u4y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,11 +52,54 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Ганга/AstonTraineeTask001",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.3923611",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="MyArrayList" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AstonTraineeTask001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MyArrayList" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayList.MyArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyArrayListTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Ганга\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c047dab5-4c4a-4605-bad7-cf0e7caf354e" name="Changes" comment="" />
@@ -45,5 +120,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
