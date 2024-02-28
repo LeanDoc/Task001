@@ -2,100 +2,31 @@ package MyArrayList;
 
 import java.util.*;
 
-
-public class MyArrayList<E> {
-
+public class MyArrayList<E> implements Iterable<E> {
     private int size = 0;
     private final int DEFAULT_CAPACITY = 10;
     private int currentCapacity = DEFAULT_CAPACITY;
-    private E[] elements;
+    E[] elements;
     private final E[] DEFAULT_ELEMENTS = (E[]) new Object[DEFAULT_CAPACITY];
-
-
-    Comparator<E> c = new Comparator<E>() {
-
-        @Override
-        /**
-         * Compare method provide comparing different types of objects.
-         * It returns Integer value:
-         * 1 if a > Object b
-         * -1 if a < Object b
-         * 0 if a == Object b
-         */
-        public int compare(E o1, E o2) {
-
-            if (o1 == null) {
-                return o2 == null ? 0 : -1;
-            } else if (o2 == null) {
-                return +1;
-            } else {
-
-                if (o1 instanceof Integer) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof String) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Character) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Long) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Double) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Boolean) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Short) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Byte) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                if (o1 instanceof Float) {
-                    return ((Comparable) o1).compareTo(o2);
-                }
-                return ((Comparable) o1).compareTo(o2);
-            }
-        }
-    };
-
-    /**
-     * QuickSort method
-     * Implements the QuickSort method on MyArrayList
-     *
-     * @param arr
-     * @return
-     */
-    public MyArrayList<E> qs(MyArrayList<E> arr) {
-        QuickSort<E> quickSort1 = new QuickSort<E>();
-        quickSort1.quickSort(this.elements, 0, this.elements.length - 1, c);
-        return arr;
-    }
-
 
     /**
      * Initializing a new Array with 10 empty spaces
      */
     public MyArrayList() {
-        this.elements = (E[]) new Object[this.DEFAULT_CAPACITY];
+        elements = (E[]) new Object[this.DEFAULT_CAPACITY];
     }
 
     /**
-     * конструктор для инициализации ArrayList нужного размера
+     * Initialization with the required number of empty spaces
      *
-     * @param initiationCapacity
+     * @param initiationCapacity - number of empty spaces
      */
     public MyArrayList(int initiationCapacity) {
-        if (initiationCapacity > 0) {
-            this.elements = (E[]) new Object[initiationCapacity];
-        } else if (initiationCapacity == 0) {
-            this.elements = DEFAULT_ELEMENTS;
-        } else
-            throw new IllegalArgumentException("Illegal Capacity: " +
-                    initiationCapacity);
+        if (initiationCapacity <= 0) {
+            elements = (E[]) new Object[DEFAULT_CAPACITY];
+        }
+        elements = (E[]) new Object[initiationCapacity];
+        currentCapacity = initiationCapacity;
     }
 
     /**
@@ -104,11 +35,10 @@ public class MyArrayList<E> {
      * @param element
      */
     public void add(E element) {
-        if (this.size == this.currentCapacity) {
-            this.grow();
+        if (size == currentCapacity) {
+            grow();
         }
-        this.elements[this.size] = element;
-        ++this.size;
+        elements[size++] = element;
     }
 
     /**
@@ -119,31 +49,29 @@ public class MyArrayList<E> {
      * @param element
      */
     public void add(int index, E element) {
-
-        if (index > this.currentCapacity || index < 0) {
-            throw new IndexOutOfBoundsException(index + " Out of Bounds");
+        if (index >= size || index < 0) {
+        size=currentCapacity;
         }
-
-        if (this.size == this.currentCapacity) {
+        if (size == currentCapacity) {
             this.grow();
         }
-
-        System.arraycopy(this.elements, index, this.elements, index + 1, this.elements.length - index - 1);
-
-        this.elements[index] = element;
-        ++this.size;
+        int shiftCount = size - index;
+        System.arraycopy(elements, index, elements, index + 1, shiftCount);
+        set(index,element);
+        size++;
     }
 
     /**
      * Method get(index) - returns an element (Object) by index from ArrayList
+     *
      * @param index
      * @return
      */
     public E get(int index) {
-        if (index > this.currentCapacity || index < 0) {
+        if (index > currentCapacity || index < 0) {
             throw new IndexOutOfBoundsException(index + " Out of Bounds");
         }
-        return this.elements[index];
+        return elements[index];
     }
 
     /**
@@ -152,45 +80,98 @@ public class MyArrayList<E> {
      * @param index
      */
     public void remove(int index) {
-        if (index > this.currentCapacity || index < 0) {
+        if (index > currentCapacity || index < 0) {
             throw new IndexOutOfBoundsException(index + " Out of Bounds");
         }
-        System.arraycopy(this.elements, index + 1, this.elements, index, this.elements.length - index - 1);
-        --this.size;
+        int shiftCount = size - index - 1;
+        System.arraycopy(elements, index + 1, elements, index, shiftCount);
+        size--;
+    }
+
+    private int contains(E element) {
+        for (int i = 0; i < size; i++) {
+            if (elements[i].hashCode() == element.hashCode() && elements[i].equals(element)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * Removes the first one equals Object
+     * @param element - the removing Object
+     * @return - true if removing was successful, false if not
+     */
+    public void remove(E element) {
+        int indexOfRemovingElement = contains(element);
+        if (indexOfRemovingElement != -1) {
+            remove(indexOfRemovingElement);
+        } else throw new IndexOutOfBoundsException("No Objects " + element);
     }
 
     /**
      * Method clear - deletes all elements from ArrayList
      */
     public void clear() {
-        for (int i = 0; i < this.currentCapacity; i++) {
-            this.elements[i] = null;
-            --this.size;
+        for (E element : elements) {
+            element = null;
         }
+        size = 0;
     }
 
-
     /**
-     * Method getSize() - returns size of ArrayList
-     *
-     * @return
+     * Method size() - returns size of ArrayList
+     * @return size of Array
      */
-    public int getSize() {
-
-        return this.elements.length;
+    public int size() {
+        return size;
     }
 
     /**
-     * Method grow() - increases the Array size to 1,5 times
+     * Method grow() - increases the Array size to 1,5x times + 1
      * It copies all elements from the source array to the destination array
      */
     private void grow() {
-        this.currentCapacity += (this.currentCapacity / 2); //+1???
-        for (int i = 0; i < this.currentCapacity - this.currentCapacity / 2 - 1; ++i) {
-            this.elements = Arrays.copyOf(this.elements, this.currentCapacity);
-        }
+        int newCurrentCapacity = (currentCapacity * 3) / 2 + 1;
+        E[] temp = (E[]) new Object[newCurrentCapacity];
+        System.arraycopy(elements, 0, temp, 0, size);
+        elements = temp;
+        currentCapacity = newCurrentCapacity;
+    }
+
+    /**
+     * switches element[index] by new element and returns the old one
+     * @param index   - number of replacing position
+     * @param element - new element on index position
+     * @return old element
+     */
+    public E set(int index, E element) {
+        E prevValue = get(index);
+        elements[index] = element;
+        return prevValue;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+
+        return new Iterator<E>() {
+            private int currentIndex = 0;
+
+            @Override
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            @Override
+            public E next() {
+                return elements[currentIndex++];
+            }
+
+            @Override
+            public void remove() {
+                int countOfShiftedElements = size - currentIndex - 1;
+                System.arraycopy(elements, currentIndex + 1, elements, currentIndex, countOfShiftedElements);
+            }
+        };
     }
 }
-
-
-

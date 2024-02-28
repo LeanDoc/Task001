@@ -1,12 +1,33 @@
 
 Q
 java:S3740
-"/Provide the parametrized type for this generic.(ª‰ó€şÿÿÿÿ8ªĞ¸”Ú1
+"/Provide the parametrized type for this generic.(ª‰ó€şÿÿÿÿ8°­§ŞŞ1
 L
-java:S3740"/Provide the parametrized type for this generic.(Ëëå8ªĞ¸”Ú1
-7
-java:S1220""Move this file to a named package.8«Ğ¸”Ú1
-X	java:S125"<This block of commented-out lines of code should be removed.(¥•ÖÏ8®Ğ¸”Ú1
-T
-java:S1854"7Remove this useless assignment to local variable "arr".(Ëëå8®Ğ¸”Ú1
-L	java:S106"+Replace this use of System.out by a logger.(É¾²”ûÿÿÿÿ8¯Ğ¸”Ú1
+java:S3740,"/Provide the parametrized type for this generic.(ß×¡8°­§ŞŞ1
+L
+java:S3740,"/Provide the parametrized type for this generic.(ß×¡8°­§ŞŞ1
+{
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯“Ï øÿÿÿÿ8°­§ŞŞ1
+i
+java:S1192*"LDefine a constant instead of duplicating this literal "List Size: " 3 times.(ƒøı˜8°­§ŞŞ1
+G	java:S106*"+Replace this use of System.out by a logger.(ƒøı˜8¶­§ŞŞ1
+L	java:S106-"+Replace this use of System.out by a logger.(ı»«øÿÿÿÿ8¶­§ŞŞ1
+G	java:S106/"+Replace this use of System.out by a logger.(°‚Ì8¶­§ŞŞ1
+G	java:S1061"+Replace this use of System.out by a logger.(åç…¯8·­§ŞŞ1
+L	java:S1065"+Replace this use of System.out by a logger.(ñàªéÿÿÿÿÿ8·­§ŞŞ1
+G	java:S1069"+Replace this use of System.out by a logger.(°‚Ì8·­§ŞŞ1
+L	java:S106;"+Replace this use of System.out by a logger.(‚¡“ªûÿÿÿÿ8·­§ŞŞ1
+G	java:S106>"+Replace this use of System.out by a logger.(°‚Ì8¸­§ŞŞ1
+G	java:S106@"+Replace this use of System.out by a logger.(ƒøı˜8¸­§ŞŞ1
+G	java:S106B"+Replace this use of System.out by a logger.(¸Î©í8¸­§ŞŞ1
+G	java:S106E"+Replace this use of System.out by a logger.(ƒøı˜8¸­§ŞŞ1
+K
+java:S2140K")Use "java.util.Random.nextInt()" instead.(ıÇÀñüÿÿÿÿ8¹­§ŞŞ1
+G	java:S106N"+Replace this use of System.out by a logger.(éÍÇÖ8¹­§ŞŞ1
+L	java:S106O"+Replace this use of System.out by a logger.(…Ë¾Šÿÿÿÿÿ8¹­§ŞŞ1
+G	java:S106S"+Replace this use of System.out by a logger.(äÍæÊ8¹­§ŞŞ1
+G	java:S106T"+Replace this use of System.out by a logger.(éÍÇÖ8º­§ŞŞ1
+G	java:S106U"+Replace this use of System.out by a logger.(éä©¦8”ò«ŞŞ1
+G	java:S106W"+Replace this use of System.out by a logger.(úğÑ®8§×­ŞŞ1
+G	java:S106["+Replace this use of System.out by a logger.(³§İ8”ì®ŞŞ1
+G	java:S106]"+Replace this use of System.out by a logger.(Ïš8ıç¯ŞŞ1

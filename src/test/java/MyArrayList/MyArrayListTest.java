@@ -1,34 +1,60 @@
 package MyArrayList;
 
+import CustomClass.Employee;
+import CustomClass.EmployeeComparator;
+import QuickSort.QuickSort;
 import org.junit.jupiter.api.Test;
+
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyArrayListTest {
 
     @Test
-    void qs() {
-        MyArrayList<Object> arrayList = new MyArrayList<>();
-        arrayList.add(9);
-        arrayList.add(1);
-        arrayList.add(7);
-        arrayList.add(3);
-        arrayList.add(5);
-        arrayList.add(2);
-        arrayList.add(6);
-        arrayList.add(0);
-        arrayList.add(8);
-        arrayList.add(10);
-        arrayList.add(4);
-        MyArrayList<Object> arrayList1 = new MyArrayList<>();
-        for (int i = 0; i < 11; i++) {
-            arrayList1.add(i);
+    void TestOfObjectArraySize() {
+        MyArrayList<Employee> employeeList = new MyArrayList<Employee>();
+        for (int i = 0; i < 1000; i++) {
+            employeeList.add(new Employee(i, (int) (18 + 3 * Math.random()), ("Mark" + i)));
         }
-        assertEquals(0, arrayList1.get(0));
-        assertEquals(1, arrayList1.get(1));
-        assertEquals(2, arrayList1.get(2));
-        assertEquals(3, arrayList1.get(3));
-        assertEquals(4, arrayList1.get(4));
+        assertEquals(1000, employeeList.size());
+    }
+
+    @Test
+    void ObjectQuickSort() throws Exception {
+        MyArrayList<Employee> employeeList = new MyArrayList<Employee>();
+        for (int i = 0; i < 6; i++) {
+            employeeList.add(new Employee(i, (18 + i), ("Mark" + i)));
+        }
+        QuickSort<Employee> employeeQuickSort = new QuickSort<Employee>();
+        Comparator<Employee> employeeComparator = new EmployeeComparator();
+        employeeQuickSort.sort(employeeList, new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getAge() - o2.getAge();
+            }
+        });
+        assertEquals(18, employeeList.get(0).getAge());
+        assertEquals(19, employeeList.get(1).getAge());
+        assertEquals(20, employeeList.get(2).getAge());
+        assertEquals(21, employeeList.get(3).getAge());
+        assertEquals(22, employeeList.get(4).getAge());
+        assertEquals(23, employeeList.get(5).getAge());
+    }
+
+    @Test
+    void naturalOrderQuickSortTest() throws Exception {
+        MyArrayList<String> arrayList = new MyArrayList<String>();
+        arrayList.add("g");
+        arrayList.add("a");
+        arrayList.add("z");
+        arrayList.add("c");
+        QuickSort<String> quickSort = new QuickSort<String>();
+        quickSort.sort(arrayList);
+        assertEquals("a", arrayList.get(0));
+        assertEquals("c", arrayList.get(1));
+        assertEquals("g", arrayList.get(2));
+        assertEquals("z", arrayList.get(3));
     }
 
     @Test
@@ -59,7 +85,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void remove() {
+    void removeByIndexTest() {
         MyArrayList<Object> arrayList = new MyArrayList<>();
         arrayList.add("g");
         arrayList.add("a");
@@ -70,34 +96,63 @@ class MyArrayListTest {
     }
 
     @Test
-    void clear() {
+    void removeByElementTest() {
+        MyArrayList<Object> arrayList = new MyArrayList<>();
+        arrayList.add("g");
+        arrayList.add("a");
+        arrayList.add("z");
+        arrayList.add("c");
+        arrayList.remove("a");
+        assertEquals("z", arrayList.get(1));
+    }
+
+    @Test
+    void clearTest() {
         MyArrayList<Object> arrayList = new MyArrayList<>();
         arrayList.add("g");
         arrayList.add("a");
         arrayList.add("z");
         arrayList.add("c");
         arrayList.clear();
-        assertEquals(null, arrayList.get(3));
+        assertEquals(0, arrayList.size());
     }
 
     @Test
-    void getSize() {
+    void sizeTest() {
         MyArrayList<Object> arrayList = new MyArrayList<>();
         arrayList.add("g");
         arrayList.add("a");
         arrayList.add("z");
         arrayList.add("c");
-        assertEquals(10, arrayList.getSize());
         arrayList.add("g");
         arrayList.add("a");
         arrayList.add("z");
         arrayList.add("c");
         arrayList.add("g");
-        assertEquals(10, arrayList.getSize());
         arrayList.add("a");
         arrayList.add("z");
-        assertEquals(15, arrayList.getSize());
         arrayList.add("c");
-        assertEquals(15, arrayList.getSize());
+        assertEquals(12, arrayList.size());
+    }
+
+    @Test
+    void addByIndexTest() {
+        MyArrayList<Double> myArrayList = new MyArrayList<Double>();
+        myArrayList.add(0, 0.0);
+        myArrayList.add(1, 1.0);
+        myArrayList.add(2, 2.0);
+        myArrayList.add(3, 3.0);
+        assertEquals(2.0, myArrayList.get(2));
+    }
+
+    @Test
+    void setTest() {
+        MyArrayList<Double> myArrayList = new MyArrayList<Double>();
+        myArrayList.add(0, 0.0);
+        myArrayList.add(1, 1.0);
+        myArrayList.add(2, 2.0);
+        myArrayList.add(3, 3.0);
+        myArrayList.set(2, 5.0);
+        assertEquals(5.0, myArrayList.get(2));
     }
 }
