@@ -10,6 +10,7 @@ import java.util.Comparator;
  * @param <E>
  */
 public class QuickSort<E> {
+
     /**
      * method, that transforms disordered Array to order by using QuickSort algorithm
      * @param list       - Array
