@@ -21,7 +21,14 @@ class MyArrayListTest {
     }
 
     @Test
-    void ObjectQuickSort() throws Exception {
+    void initializationTest() {
+        MyArrayList myArrayList = new MyArrayList(10);
+        assertEquals(null, myArrayList.get(9));
+        assertEquals(null, myArrayList.get(0));
+    }
+
+    @Test
+    void ObjectQuickSortTest() throws Exception {
         MyArrayList<Employee> employeeList = new MyArrayList<Employee>();
         for (int i = 0; i < 6; i++) {
             employeeList.add(new Employee(i, (18 + i), ("Mark" + i)));
@@ -58,24 +65,14 @@ class MyArrayListTest {
     }
 
     @Test
-    void add() {
-        MyArrayList<Object> arrayList = new MyArrayList<>();
-        arrayList.add(5);
-        arrayList.add(7);
-        arrayList.add(1);
-        arrayList.add(2, 23);
-        assertEquals(23, arrayList.get(2));
-    }
-
-    @Test
-    void testAdd() {
+    void addElementByIndexTest() {
         MyArrayList<Object> arrayList = new MyArrayList<>();
         arrayList.add(23);
         assertEquals(23, arrayList.get(0));
     }
 
     @Test
-    void get() {
+    void getIndexByElementTest() {
         MyArrayList<Object> arrayList = new MyArrayList<>();
         arrayList.add("g");
         arrayList.add("a");
@@ -136,7 +133,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void addByIndexTest() {
+    void addByIndexAndElementTest() {
         MyArrayList<Double> myArrayList = new MyArrayList<Double>();
         myArrayList.add(0, 0.0);
         myArrayList.add(1, 1.0);

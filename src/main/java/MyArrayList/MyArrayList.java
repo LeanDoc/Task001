@@ -4,16 +4,16 @@ import java.util.*;
 
 public class MyArrayList<E> implements Iterable<E> {
     private int size = 0;
-    private final int DEFAULT_CAPACITY = 10;
-    private int currentCapacity = DEFAULT_CAPACITY;
+    private static final int DEFAULT_CAPACITY = 10;
+    private int currentCapacity;
     E[] elements;
-    private final E[] DEFAULT_ELEMENTS = (E[]) new Object[DEFAULT_CAPACITY];
+
 
     /**
      * Initializing a new Array with 10 empty spaces
      */
     public MyArrayList() {
-        elements = (E[]) new Object[this.DEFAULT_CAPACITY];
+        this(DEFAULT_CAPACITY);
     }
 
     /**
