@@ -8,7 +8,6 @@ public class MyArrayList<E> implements Iterable<E> {
     private int currentCapacity;
     E[] elements;
 
-
     /**
      * Initializing a new Array with 10 empty spaces
      */
@@ -18,7 +17,6 @@ public class MyArrayList<E> implements Iterable<E> {
 
     /**
      * Initialization with the required number of empty spaces
-     *
      * @param initiationCapacity - number of empty spaces
      */
     public MyArrayList(int initiationCapacity) {
@@ -31,7 +29,6 @@ public class MyArrayList<E> implements Iterable<E> {
 
     /**
      * Method add(E) - adds an element (Object) to ArrayList
-     *
      * @param element
      */
     public void add(E element) {
@@ -44,7 +41,6 @@ public class MyArrayList<E> implements Iterable<E> {
     /**
      * Method add(index,E) - adds an element (Object) by index to ArrayList
      * If Array is full, it calls the grow() method to increase the empty space
-     *
      * @param index
      * @param element
      */
@@ -63,7 +59,6 @@ public class MyArrayList<E> implements Iterable<E> {
 
     /**
      * Method get(index) - returns an element (Object) by index from ArrayList
-     *
      * @param index
      * @return
      */
@@ -76,7 +71,6 @@ public class MyArrayList<E> implements Iterable<E> {
 
     /**
      * Method remove(index) - delete an element (Object) by index form ArrayList
-     *
      * @param index
      */
     public void remove(int index) {
