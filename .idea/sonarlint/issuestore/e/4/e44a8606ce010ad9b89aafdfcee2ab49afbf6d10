@@ -1,33 +1,34 @@
 
 Q
-java:S3740
-"/Provide the parametrized type for this generic.(ª‰ó€şÿÿÿÿ8°­§ŞŞ1
+java:S3740	"/Provide the parametrized type for this generic.(ª‰ó€şÿÿÿÿ8»Öò‰ß1
 L
-java:S3740,"/Provide the parametrized type for this generic.(ß×¡8°­§ŞŞ1
+java:S3740("/Provide the parametrized type for this generic.(ß×¡8¼Öò‰ß1
 L
-java:S3740,"/Provide the parametrized type for this generic.(ß×¡8°­§ŞŞ1
-{
-java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯“Ï øÿÿÿÿ8°­§ŞŞ1
+java:S3740("/Provide the parametrized type for this generic.(ß×¡8¼Öò‰ß1
+v
+java:S2293="YReplace the type specification in this constructor call with the diamond operator ("<>").(»„ÿ„8¼Öò‰ß1
 i
-java:S1192*"LDefine a constant instead of duplicating this literal "List Size: " 3 times.(ƒøı˜8°­§ŞŞ1
-G	java:S106*"+Replace this use of System.out by a logger.(ƒøı˜8¶­§ŞŞ1
-L	java:S106-"+Replace this use of System.out by a logger.(ı»«øÿÿÿÿ8¶­§ŞŞ1
-G	java:S106/"+Replace this use of System.out by a logger.(°‚Ì8¶­§ŞŞ1
-G	java:S1061"+Replace this use of System.out by a logger.(åç…¯8·­§ŞŞ1
-L	java:S1065"+Replace this use of System.out by a logger.(ñàªéÿÿÿÿÿ8·­§ŞŞ1
-G	java:S1069"+Replace this use of System.out by a logger.(°‚Ì8·­§ŞŞ1
-L	java:S106;"+Replace this use of System.out by a logger.(‚¡“ªûÿÿÿÿ8·­§ŞŞ1
-G	java:S106>"+Replace this use of System.out by a logger.(°‚Ì8¸­§ŞŞ1
-G	java:S106@"+Replace this use of System.out by a logger.(ƒøı˜8¸­§ŞŞ1
-G	java:S106B"+Replace this use of System.out by a logger.(¸Î©í8¸­§ŞŞ1
-G	java:S106E"+Replace this use of System.out by a logger.(ƒøı˜8¸­§ŞŞ1
+java:S1192'"LDefine a constant instead of duplicating this literal "List Size: " 4 times.(ƒøı˜8¼Öò‰ß1
+
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8¿Öò‰ß1
+G	java:S106'"+Replace this use of System.out by a logger.(ƒøı˜8ÁÖò‰ß1
+L	java:S106)"+Replace this use of System.out by a logger.(ı»«øÿÿÿÿ8ÂÖò‰ß1
+G	java:S106+"+Replace this use of System.out by a logger.(°‚Ì8ÂÖò‰ß1
+G	java:S106-"+Replace this use of System.out by a logger.(åç…¯8ÃÖò‰ß1
+L	java:S1061"+Replace this use of System.out by a logger.(ñàªéÿÿÿÿÿ8ÃÖò‰ß1
+G	java:S1064"+Replace this use of System.out by a logger.(°‚Ì8ÃÖò‰ß1
+G	java:S1066"+Replace this use of System.out by a logger.(ƒøı˜8ÃÖò‰ß1
+L	java:S1067"+Replace this use of System.out by a logger.(ü–­÷øÿÿÿÿ8ÃÖò‰ß1
+G	java:S1069"+Replace this use of System.out by a logger.(ƒøı˜8ÃÖò‰ß1
+L	java:S106:"+Replace this use of System.out by a logger.(™ö½¢úÿÿÿÿ8ÃÖò‰ß1
+G	java:S106<"+Replace this use of System.out by a logger.(ƒøı˜8ÄÖò‰ß1
 K
-java:S2140K")Use "java.util.Random.nextInt()" instead.(ıÇÀñüÿÿÿÿ8¹­§ŞŞ1
-G	java:S106N"+Replace this use of System.out by a logger.(éÍÇÖ8¹­§ŞŞ1
-L	java:S106O"+Replace this use of System.out by a logger.(…Ë¾Šÿÿÿÿÿ8¹­§ŞŞ1
-G	java:S106S"+Replace this use of System.out by a logger.(äÍæÊ8¹­§ŞŞ1
-G	java:S106T"+Replace this use of System.out by a logger.(éÍÇÖ8º­§ŞŞ1
-G	java:S106U"+Replace this use of System.out by a logger.(éä©¦8”ò«ŞŞ1
-G	java:S106W"+Replace this use of System.out by a logger.(úğÑ®8§×­ŞŞ1
-G	java:S106["+Replace this use of System.out by a logger.(³§İ8”ì®ŞŞ1
-G	java:S106]"+Replace this use of System.out by a logger.(Ïš8ıç¯ŞŞ1
+java:S2140?")Use "java.util.Random.nextInt()" instead.(ÒĞÔ”ÿÿÿÿÿ8ÄÖò‰ß1
+G	java:S106A"+Replace this use of System.out by a logger.(©»ëï8ÄÖò‰ß1
+L	java:S106B"+Replace this use of System.out by a logger.(æ”™Àÿÿÿÿÿ8ÄÖò‰ß1
+G	java:S106F"+Replace this use of System.out by a logger.(ØÖÀÎ8ÅÖò‰ß1
+G	java:S106G"+Replace this use of System.out by a logger.(©»ëï8ÅÖò‰ß1
+L	java:S106H"+Replace this use of System.out by a logger.(¶ÚÛıÿÿÿÿ8ÅÖò‰ß1
+L	java:S106J"+Replace this use of System.out by a logger.(¸ ÕÉüÿÿÿÿ8ÆÖò‰ß1
+L	java:S106N"+Replace this use of System.out by a logger.(ŒŠÄÎşÿÿÿÿ8ÆÖò‰ß1
+G	java:S106P"+Replace this use of System.out by a logger.(Óñ‹›8ÆÖò‰ß1

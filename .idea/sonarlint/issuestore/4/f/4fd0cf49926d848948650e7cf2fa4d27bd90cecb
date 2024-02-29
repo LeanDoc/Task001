@@ -1,20 +1,10 @@
 
-l
-java:S1192<"ODefine a constant instead of duplicating this literal " Out of Bounds" 3 times.(ÊÅı€8×ª¸¸Ş1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›‰­—8Øª¸¸Ş1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›‰­—8³šäŠß1
 `
-java:S1226"DIntroduce a new variable instead of reusing the parameter "element".(–Ó»68Ùª¸¸Ş1
-|	java:S116"[Rename this field "DEFAULT_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û„ƒ¬şÿÿÿÿ8ßª¸¸Ş1
-|	java:S116"[Rename this field "DEFAULT_ELEMENTS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íºóñùÿÿÿÿ8ßª¸¸Ş1
-C
-java:S1170"!Make this final field static too.(û„ƒ¬şÿÿÿÿ8ßª¸¸Ş1
-C
-java:S1170"!Make this final field static too.(íºóñùÿÿÿÿ8ßª¸¸Ş1
+java:S1226u"DIntroduce a new variable instead of reusing the parameter "element".(–Ó»68´šäŠß1
 W
-java:S1854";Remove this useless assignment to local variable "element".(–Ó»68äª¸¸Ş1
+java:S1854u";Remove this useless assignment to local variable "element".(–Ó»68ÁšäŠß1
 N
-java:S1481~",Remove this unused "element" local variable.(”éÊêüÿÿÿÿ8äª¸¸Ş1
+java:S1481t",Remove this unused "element" local variable.(”éÊêüÿÿÿÿ8ÁšäŠß1
 q
-java:S2272¾"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¤¿ğßıÿÿÿÿ8æª¸¸Ş1
-V
-java:S1068"4Remove this unused "DEFAULT_ELEMENTS" private field.(íºóñùÿÿÿÿ8çª¸¸Ş1
+java:S2272¦"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¤¿ğßıÿÿÿÿ8ÃšäŠß1
